@@ -1,0 +1,65 @@
+@use '../base/variables'as v;
+@use '../base/mixins'as m;
+
+nav {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 1px 1px 5px v.$gris_oscuro;
+    @include m.bg(v.$celeste_uno, v.$blanco);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .logo__container{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        img {
+            max-width: 4rem;
+        }
+    }
+
+    .nav__items {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            color: v.$blanco;
+            font-size: 1.8rem;
+            padding: 0 2rem;
+
+            &:hover{
+                @include m.bordeinf(v.$celeste_dos);
+            }
+        }
+    }
+
+    .nav__signin-signup{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        & a:first-child{
+            color: v.$blanco;
+            &:hover{
+                transform: scale(1.2);
+                z-index: 100;
+            }
+        }
+    }
+
+
+    .btn {
+        display: none;
+    }
+}
