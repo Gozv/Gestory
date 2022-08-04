@@ -1,0 +1,25 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.organizacion{
+    .organizacion__container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .organizacion__heading{
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .organizacion__descripcion{
+        text-align: center;
+    }
+
+    &__img{
+        margin-top: 2rem;
+    }
+}

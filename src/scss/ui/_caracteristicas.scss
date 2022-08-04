@@ -1,0 +1,37 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.caracteristicas{
+    width: 80%;
+    @include m.bordeinf(#ccc);
+
+    h2{
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &__grid{
+        @include m.grid(3,2rem)
+    }
+}
+
+.caracteristica{
+    display: flex;
+
+
+    &__img{
+        width: 25rem;
+    }
+
+    &__nombre{
+        text-align: left;
+        font-size: 2.4rem;
+        color: v.$gris_dos;
+    }
+
+    &__descripcion{
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding: .5rem;
+    }
+}

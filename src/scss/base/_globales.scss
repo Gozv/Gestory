@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
   
@@ -19,6 +20,7 @@ body {
     height: 100vh;
     background: rgb(34,193,195);
     background: linear-gradient(180deg, rgb(157, 228, 228) 0%, rgba(45,203,253,0.008823597798494398) 40%); 
+    background-repeat: no-repeat;
 }
 p {
     color: v.$negro;

@@ -4,7 +4,7 @@
 .footer{
     background-color: v.$celeste_uno;
     color: v.$blanco;
-
+    margin-top: 5rem;
 
     .footer-title{
         display: flex;
@@ -39,5 +39,6 @@
     .footer-copy{
         text-align: center;
         color: v.$blanco;
+        background-color: #163d56;
     }
 }
