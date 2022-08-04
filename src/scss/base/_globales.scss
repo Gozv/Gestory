@@ -1,11 +1,14 @@
 @use 'variables' as v; 
 @use 'mixins' as m; 
 
-html {
-    font-size: 62.5%;
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 62.5%;
 }
 
   
@@ -41,6 +44,13 @@ h1 {
     color: v.$blanco;
     margin: 0%;
 }
+
+h2{
+    font-size: 3.2rem;
+    color: v.$negro;
+    margin: 0%;
+}
+
 h3 {
     font-size: 2.8rem;
     text-align: center;

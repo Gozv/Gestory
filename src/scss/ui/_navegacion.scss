@@ -48,7 +48,7 @@ nav {
         display: flex;
         align-items: center;
         gap: 3rem;
-
+        
         & a:first-child{
             color: v.$blanco;
             &:hover{
@@ -64,12 +64,6 @@ nav {
     }
 }
 // ↓↓↓ Menu desplegable ↓↓↓
-
-// .menu{
-//     background-color: #1A202C;
-//     color: #fff;
-//     height: 70px;
-// }
 
 .menu__container{
     display: flex;
