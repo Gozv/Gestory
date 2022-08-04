@@ -2,7 +2,7 @@
 @use 'base/variables' as v;
 
 .organizacion{
-    .organizacion__container{
+    &__container{
         width: 80%;
         margin: 0 auto;
         display: flex;
@@ -10,12 +10,12 @@
         align-items: center;
     }
 
-    .organizacion__heading{
+    &__heading{
         text-align: center;
         padding: 2rem 0;
     }
 
-    .organizacion__descripcion{
+    &__descripcion{
         text-align: center;
     }
 
