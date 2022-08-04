@@ -2,7 +2,7 @@
 @use 'base/variables' as v;
 
 .btn-primario{
-    @include m.boton(v.$celeste_uno, v.$negro);
+    @include m.boton(v.$celeste_uno, v.$blanco);
 }
 
 .btn-secundario{
@@ -11,6 +11,10 @@
     &:hover{
         color: v.$blanco;
     }
+}
+
+.btn-dam{
+    @include m.boton(#0099ff, v.$negro);
 }
 
 .btn{
