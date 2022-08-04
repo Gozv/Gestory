@@ -58,3 +58,32 @@
 @mixin bordeinf($colorLine){
     border-bottom: 3px solid $colorLine;
 }
+
+@mixin headingBorder($colorTexto, $colorLine, $shadow){
+    font-size: 3.6rem;
+    display: inline-block;
+    margin-top: 5rem;
+    color: $colorTexto;
+
+    @include tablet{
+        margin-top: 0;
+    }
+
+    &::after{
+        content: "";
+        background-color: $colorLine;
+        height: 1rem;
+        width: 100%;
+        display: block;
+        margin-top: -1.3rem;
+        box-shadow: 1px 1px 5px $shadow;
+    }
+}
+
+
+@mixin iconoBg($url){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 1rem;
+    background-size: 16rem;
+}

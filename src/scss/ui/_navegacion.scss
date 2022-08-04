@@ -48,6 +48,10 @@ nav {
         display: flex;
         align-items: center;
         gap: 3rem;
+
+        & a:nth-child(2){
+            font-weight: 500;
+        }
         
         & a:first-child{
             color: v.$blanco;

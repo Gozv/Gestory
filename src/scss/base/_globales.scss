@@ -17,6 +17,8 @@ body {
     font-size: 1.6rem;
     background-color: v.$blanco;
     height: 100vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(180deg, rgb(157, 228, 228) 0%, rgba(45,203,253,0.008823597798494398) 40%); 
 }
 p {
     color: v.$negro;
@@ -27,6 +29,11 @@ p {
     width: 90%;
     margin: 0 auto;
 }
+
+.seccion{
+    padding: 8rem 0;
+}
+
 
 a {
     text-decoration: none;

@@ -13,6 +13,10 @@
     }
 }
 
+.btn-dam{
+    @include m.boton(#0099ff, v.$negro);
+}
+
 .btn{
     border: none;
     font-size: 4rem;
