@@ -1,6 +1,10 @@
+#superContenedor{
+    overflow: hidden;
+}
 .slider-contenedor{
     width: 100%;
     display: flex;
+    // overflow:hidden;
 }
 
 .contenido-slider{
