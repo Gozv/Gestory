@@ -1,5 +1,5 @@
-@use 'base/mixins' as m;
-@use 'base/variables' as v;
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
 
 #superContenedor{
     overflow: hidden;
@@ -12,17 +12,20 @@
 
 .contenido-slider{
     width: 100%;
-    height: 600px;
+    height: 70rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-shrink: 0;
-    box-shadow: 3px 3px 5px v.$negro;
+    background-color: v.$celeste_uno;
+
+    h2{
+        color: v.$blanco;
+    }
 }
 
 .contenido-slider:nth-child(2){
     background: #332863;
-    color: #fff;
 }
 
 .contenido-slider:nth-child(3){
@@ -57,6 +60,13 @@
     border-radius: 3px;
     margin-top: 20px;
     text-decoration: none;
+    border-radius: 1rem;
+    transition: transform 1s;
+}
+
+.contenido-slider a:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px v.$celeste_dos;
 }
 
 .contenido-slider:nth-child(2) a{

@@ -1,6 +1,5 @@
-@use 'base/mixins' as m;
-@use 'base/variables' as v;
-
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
 .banner__bg{
     background-image: url("/src/img/wave.svg");
     background-size: cover;
