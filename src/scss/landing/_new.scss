@@ -28,6 +28,11 @@
         i{
             font-size: 2.6rem;
             color: v.$celeste_uno;
+            
+            &:hover{
+                cursor: pointer;
+                color: v.$celeste_dos;
+            }
         }
         input{
             font-size: 2.2rem;
