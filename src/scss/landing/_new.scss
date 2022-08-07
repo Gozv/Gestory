@@ -1,0 +1,48 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.newsletter{
+    width: 70%;
+    margin: 0 auto;
+    background-color: v.$color_claro;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 5px 5px 10px v.$celeste_uno;
+
+    h2{
+        color: v.$celeste_uno;
+    }
+
+    p{
+        padding: 0 5rem;
+    }
+
+    .email-box{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem;
+        align-items: center;
+
+        i{
+            font-size: 2.6rem;
+            color: v.$celeste_uno;
+        }
+        input{
+            font-size: 2.2rem;
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            font-size: 2rem;
+            color: v.$gris_dos;
+            margin-left: 2rem;
+
+            &:hover{
+                cursor: pointer;
+                color: v.$celeste_uno;
+            }
+        }
+    }
+}
