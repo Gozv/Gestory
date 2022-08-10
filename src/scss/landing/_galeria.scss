@@ -1,0 +1,22 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.gallery{
+    max-width: 70%;
+    display: flex;
+    height: 60rem;
+
+    .img-container{
+        min-width: 20rem;
+        object-fit: cover;
+        flex: 1;
+        transition: .3s flex;
+
+        &:hover{
+            flex: 2;
+            cursor: pointer;
+        }
+    }
+
+    
+}

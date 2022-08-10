@@ -121,7 +121,9 @@ nav {
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.649);
+    backdrop-filter: blur(40px);
+    border-radius: .5rem;
 }
 /* Padding del menu desplegable ↓↓↓ */
 .menu__link--inside{
