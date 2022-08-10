@@ -1,0 +1,149 @@
+@use '../base/variables' as v;
+   
+.todo{
+       width: 70%;
+       line-height: 4rem;
+       display: flex;    
+       justify-content: flex-start;
+       margin: 4rem 1em 0 6.8rem;
+       flex-direction: column;
+       font-size: 4rem;
+
+    .junto{
+       margin: 6rem;
+
+        #Gestory{
+            font-size: 7.2rem;
+            line-height: 4rem;
+            margin-bottom: 2rem;
+        }
+    } 
+
+    input[type="email"],[type="password"]{
+        font-family: v.$fuente_principal;
+        border-style: hidden hidden solid;
+        border-color: v.$celeste_uno;
+        background-color:rgba(0, 0, 0, 0);
+        color: v.$gris_oscuro;
+        font-size: 1.8rem;
+        text-overflow: ellipsis;
+        margin-bottom: 1.2rem;
+        letter-spacing: 0.3px;
+    }
+    
+    input[type="password"]{
+        padding: 4px 0 0;
+        }
+    
+    input:focus {
+        outline: none;        
+    }
+
+   .iniciodesesion{
+       display: inline-flex;
+       flex-direction: column;
+       margin: 2rem 0 2rem;
+   
+   }    
+
+   .email .contra{
+       display: flex;
+   }
+   
+   #icon{
+       font-size: 2.4rem;
+   }
+
+   .forgot_or_register{
+       display: flex;
+   }
+
+    .forgot_or_register a{
+       font-size: 2.3rem;
+   }
+   
+   .forgot_or_register a:hover{
+       color: v.$celeste_uno;      
+   }   
+
+   .botoniniciarsesion{
+       border: none;
+       border-radius: 30px;
+       padding: 1rem;
+       font-size: 1.8rem;
+       background-color: v.$celeste_uno;
+       font-family: v.$fuente_principal;
+       font-weight: 200;
+       color: white;
+       letter-spacing: 1px;
+       display: flex;
+       width: 65%;
+       justify-content: center;
+       margin-bottom: 1.2rem;
+       cursor: pointer;
+    }
+    
+    .botoniniciarsesion:hover{
+            background-color: #0b3149;
+            transition: 0.2s;
+    }
+   
+    .otroslogin{
+        font-size: 1.4rem;
+        text-align: center;
+        color: v.$gris_dos;
+        right: 0;
+        left: 0;        
+        width: 65%;
+    }
+
+    #login_redes{
+        font-size: 2rem;
+        width: 70%;
+        right: 0;
+        left: 0;  
+    }
+}
+
+#pantalla-dividida{
+       display: flex;
+}
+
+.parteizq{
+    height: 100vh;
+       width: 55%;
+}
+
+.parteder{
+    background: hsla(203, 30%, 41%, 0.096);
+    height: 100vh;
+    width: 45%;
+
+    #svg{
+        width: 70%;
+        margin: auto;
+        padding-top: 7rem;
+    } 
+
+   .logo_pag{
+   width: calc(5% + 5px);
+       position: absolute;
+       bottom: 8px;
+       right: 16px;
+   }    
+}
+
+#volver_atras{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 3.5rem;    
+    cursor: pointer;
+}
+
+#volver_atras:hover{
+    color: v.$celeste_uno;
+}
+
+
+   
