@@ -11,7 +11,23 @@
     }
 
     &__grid{
-        @include m.grid(3,2rem)
+        @include m.grid(3,2rem);
+
+        @include m.telefono{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @include m.tablet{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    @include m.telefono{
+        width: 100%;
+    }
+    @include m.tablet{
+        width: 100%;
     }
 }
 
