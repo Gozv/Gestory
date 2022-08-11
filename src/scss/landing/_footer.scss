@@ -6,6 +6,7 @@
     color: v.$blanco;
     margin-top: 5rem;
 
+
     .footer-title{
         display: flex;
         flex-direction: column;
@@ -13,7 +14,15 @@
         align-items: center;
         max-width: 15rem;
         margin: 0 auto;
+
+        @include m.telefono{
+            display: none;
+        }
+        @include m.tablet{
+            display: none;
+        }
     }
+
 
     
 
@@ -22,6 +31,17 @@
         margin-bottom: 2rem;
         padding: 5rem;
         align-items: center;
+
+        @include m.telefono{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+        @include m.tablet{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
 
         h3{
             text-align: left;
