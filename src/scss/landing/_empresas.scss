@@ -4,6 +4,15 @@
 .empresas{
     width: 70%;
     margin: 0 auto;
+
+    @include m.telefono{
+        width: 90%;
+        padding: 0;
+    }
+    @include m.tablet{
+        width: 90%;
+        padding: 0;
+    }
 }
 
 .empresas-sup{
@@ -26,6 +35,13 @@
                 max-width: 15rem;
             }
         }
+
+        @include m.telefono{
+            @include m.grid(2,2rem);
+        }
+        @include m.tablet{
+            @include m.grid(2,2rem);
+        }
     }
 }
 
@@ -46,4 +62,10 @@
         }
     }
 
+    @include m.telefono{
+        display: none;
+    }
+    @include m.tablet{
+        display: none;
+    }
 }

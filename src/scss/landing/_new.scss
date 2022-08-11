@@ -10,6 +10,13 @@
     padding: 2rem 0;
     box-shadow: 5px 5px 10px v.$celeste_uno;
 
+    @include m.telefono{
+        width: 90%;
+    }
+    @include m.tablet{
+        width: 90%;
+    }
+
     h2{
         color: v.$celeste_uno;
     }
@@ -25,6 +32,11 @@
         padding: 2rem;
         align-items: center;
 
+        @include m.telefono{
+            flex-wrap: wrap;
+        }
+        @include m.tablet{}
+            flex-wrap: wrap;
         i{
             font-size: 2.6rem;
             color: v.$celeste_uno;
