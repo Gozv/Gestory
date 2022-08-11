@@ -23,20 +23,23 @@
                  <h2 id="Gestory">Gestory</h2>                
                     <div class="iniciodesesion">
                         <div class="email">
-                        <i id="icon" class='bx bx-user'></i>
-                        <input type="email" placeholder="Correo electrónico o usuario">
+                       <form action="" method="POST" id="form">
+                         <i id="icon" class='bx bx-user'></i>
+                        <input type="email" id="email1" placeholder="Correo electrónico o usuario" required>
                     </div>
                     <div class="contraseña">
                         <i id="icon" class='bx bx-lock-alt'></i>
-                        <input type="password" placeholder="Contraseña">  
+                        <input type="password" id="pass1" placeholder="Contraseña" required>  
                     </div>
                     </div>                
-                    <a href="loginpage.html"></a><button class="botoniniciarsesion" type="button" name="button">Iniciar sesión</button></a> 
+                    <a href="loginpage.html"></a><button class="botoniniciarsesion" type="submit" name="button">Iniciar sesión</button></a> 
+                    <!-- alertas de usuario ↓↓↓ -->
+                    <p class="warnings" id="warnings"></p>
                     <div class="forgot_or_register">
                         <a href="#"><h6>¿Olvidaste tu contraseña?</h6></a>
                         <p>・</p>
                         <a href="#"><h6>Registrarse</h6></a>
-                                          
+                    </form>                      
                     </div>
                     <p class="otroslogin">--- o continuar con ---</p>
                     <i id="login_redes" class='bx bxl-facebook-circle'></i>
@@ -56,6 +59,6 @@
     </div>
  </section> 
 
-
+<script src="./src/js/formulario.js"></script>
 </body>
 </html>
