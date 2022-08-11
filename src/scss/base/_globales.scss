@@ -21,7 +21,35 @@ body {
     background: rgb(34,193,195);
     background: linear-gradient(180deg, rgb(157, 228, 228) 0%, rgba(45,203,253,0.008823597798494398) 40%); 
     background-repeat: no-repeat;
+
+    &.dark {
+		background: v.$gris_oscuro;
+
+        h2,h3,h4{
+            color: v.$blanco;
+        }
+        .caracteristicas h3{
+            color: v.$celeste_uno;
+        }
+        p{
+            color: v.$blanco;
+        }
+        .empresas p{
+            color: v.$blanco;
+        }
+        .newsletter{
+            background-color: v.$gris_oscuro;
+            box-shadow: 10px 15px 15px v.$celeste_uno;
+        }
+	}
 }
+
+a {
+	color: #222222;
+	text-decoration: none;
+	font-weight: 500;
+}
+
 p {
     color: v.$negro;
     font-size: 2rem;

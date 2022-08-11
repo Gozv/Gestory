@@ -1,5 +1,8 @@
+//No olvidar variables y mixins plis chiquistriquis.
 @use '../base/variables' as v;
-   
+@use '../base/mixins' as m;
+
+//camiooo
 .todo{
        width: 70%;
        line-height: 4rem;
@@ -45,10 +48,6 @@
        margin: 2rem 0 2rem;
    
    }    
-
-   .email .contra{
-       display: flex;
-   }
    
    #icon{
        font-size: 2.4rem;
@@ -56,6 +55,7 @@
 
    .forgot_or_register{
        display: flex;
+       margin-bottom: 0.4rem;
    }
 
     .forgot_or_register a{
@@ -98,20 +98,28 @@
     }
 
     #login_redes{
-        font-size: 2rem;
-        width: 70%;
+        font-size: 4rem;
+        width: 60%;
         right: 0;
         left: 0;  
+        display: flex;
+        cursor: pointer;
+        margin: 1rem;
+        justify-content: center;
+        color: v.$celeste_uno;
     }
 }
 
 #pantalla-dividida{
        display: flex;
+       background-color: white;
+
 }
 
 .parteizq{
     height: 100vh;
-       width: 55%;
+    width: 55%;
+    font-size: 7rem;   
 }
 
 .parteder{
@@ -119,18 +127,42 @@
     height: 100vh;
     width: 45%;
 
+   @include m.tablet{
+       display: none;
+   }
+
+   @include m.telefono{
+    display: none;
+    }
+
     #svg{
         width: 70%;
         margin: auto;
         padding-top: 7rem;
+
+        @include m.tablet{
+            display: none;
+        }
+     
+        @include m.telefono{
+         display: none;
+         }
     } 
 
    .logo_pag{
-   width: calc(5% + 5px);
+       width: calc(5% + 5px);
        position: absolute;
        bottom: 8px;
        right: 16px;
+
+       @include m.tablet{
+        display: none;
+        }
+        @include m.telefono{
+        display: none;
+        }
    }    
+
 }
 
 #volver_atras{
