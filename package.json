@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "dev": "gulp"
+    "dev": "gulp",
+    "tw": "postcss public/css/tailwind.css -o public/css/tail.css --watch"
   },
   "keywords": [],
-  "author": "El Yisus",
+  "author": "Equipo 3",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.8",
@@ -20,6 +21,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "nodemon": "^2.0.19",
     "postcss": "^8.4.16",
-    "sass": "^1.54.4"
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.54.4",
+    "tailwindcss": "^3.1.8"
   }
 }
