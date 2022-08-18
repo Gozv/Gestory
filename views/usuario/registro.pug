@@ -1,0 +1,59 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Gestory
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='../css/app.css')
+  // Boxicons
+  link(href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet')
+  // Tail
+  link(rel='stylesheet' href='../css/tail.css')
+section.inicio_de_sesion
+  a(href='/')
+    i#volver_atras.bx.bx-left-arrow-alt
+  #pantalla-dividida
+    .parteizq
+      .todo
+        .junto
+          h2#Gestory Gestory
+          .iniciodesesion
+            .email
+              form#form(action='' method='POST')
+                i#icon.bx.bx-user
+                input#email1(type='email' placeholder='Nombre de usuario' required='')
+            .email
+              form#form(action='' method='POST')
+                i#icon.bx.bx-envelope
+                input#email1(type='email' placeholder='Correo electrónico' required='')
+            .pass(class='contraseña')
+              i#icon.bx.bx-lock-alt
+              input#pass1(type='password' placeholder='Contraseña' required='')
+            .pass(class='contraseña rep-contraseña')
+              i#icon.bx.bx-lock-alt
+              input#pass1(type='password' placeholder='Repetir Contraseña' required='')
+          a(href='usuario/login')
+          button.botoniniciarsesion(type='submit' name='button') Iniciar sesi&oacute;n
+          // alertas de usuario ↓↓↓
+          p#warnings.warnings
+          .forgot_or_register
+            a(href='/usuario/recuperar')
+              h6 &iquest;Olvidaste tu contrase&ntilde;a?
+            p &#x30FB;
+            a.texto-registrarse(href='/usuario/login')
+              h6 Ingresar
+          p.otroslogin --- o continuar con ---
+          #login_redes
+            i.bx.bxl-facebook-circle
+            i.bx.bxl-google
+            i.bx.bxl-twitter
+    .parteder.registro
+      img#svg(src='../img/svg/registro.svg' alt='registro-svg')
+      .logo__container
+        a(href='/')
+          img.logo_pag(src='../img/Logo-pag.png' alt='Logo-pagina')
+.info_extra
+script(src='./public/js/formulario.js')
