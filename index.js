@@ -1,8 +1,23 @@
-const express = require("express");
-const path = require("path")
+import express from "express";
+import path from "path";
+import db from "./config/db.js";
+import { fileURLToPath }  from "url";
+
+//Recreo la funcionalidad de "Dirname"
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 //Creo la app
 const app = express();
+
+
+//Conexión a base de datitos
+try{ //Intenta
+    await db.authenticate();
+    console.log('Conexión a base de datos iniciada correctamente')
+} catch(error){ //En caso de error
+    console.log(error);
+}
 
 
 //Estaticas.
