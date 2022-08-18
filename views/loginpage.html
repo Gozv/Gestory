@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/app.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="inicio_de_sesion">
+        <a href="/"><i id="volver_atras" class='bx bx-left-arrow-alt'></i></a>
+        <div id="pantalla-dividida">
+            <div class="parteizq">
+                <div class="todo">
+                    <div class="junto">
+                        <h2 id="Gestory">Gestory</h2>
+                        <div class="iniciodesesion">
+                            <div class="email">
+                                <form action="" method="POST" id="form">
+                                    <i id="icon" class='bx bx-user'></i>
+                                    <input type="email" id="email1" placeholder="Correo electrónico o usuario" required>
+                            </div>
+                            <div class="contraseña">
+                                <i id="icon" class='bx bx-lock-alt'></i>
+                                <input type="password" id="pass1" placeholder="Contraseña" required>
+                            </div>
+                        </div>
+                        <a href="login"></a><button class="botoniniciarsesion" type="submit"
+                            name="button">Iniciar sesión</button></a>
+                        <!-- alertas de usuario ↓↓↓ -->
+                        <p class="warnings" id="warnings"></p>
+                        <div class="forgot_or_register">
+                            <a href="#">
+                                <h6>¿Olvidaste tu contraseña?</h6>
+                            </a>
+                            <p>・</p>
+                            <a class="texto-registrarse" href="registro">
+                                <h6>Registrarse</h6>
+                            </a>
+                            </form>
+                        </div>
+                        <p class="otroslogin">--- o continuar con ---</p>
+                        <div id="login_redes"><i class='bx bxl-facebook-circle'></i>
+                            <i class='bx bxl-google'></i><i class='bx bxl-twitter'></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="parteder">
+                <img id="svg" src="../img/svg/undraw_futuristic_interface_re_0cm6.svg" alt="">
+                <div class="logo__container">
+                    <a href="/">
+                        <img class="logo_pag" src="../img/Logo-pag.png" alt="Logo-pagina">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="Registro">                 
+    <div class="parteizq">
+        <div class="todo">
+        <div class="junto"> 
+            <h2 id="Gestory">Gestory</h2>                
+            <div class="iniciodesesion">
+            <form action="" method="POST" id="form">
+                 <div class="username">
+                    <i id="icon" class='bx bx-user'></i>
+                    <input type="email" id="email1" placeholder="Nombre de usuario" required>                     
+                 </div>
+                 <div class="email">
+                     <i id="icon" class='bx bx-envelope'></i>
+                    <input type="email" id="email1" placeholder="Correo electrónico" required>
+                </div>
+                <div class="contraseña">
+                    <i id="icon" class='bx bx-lock-alt'></i>
+                    <input type="password" id="pass1" placeholder="Contraseña" required>  
+                </div>
+                <div class="repetir_contra">
+                <i id="icon" class='bx bx-lock-alt'></i>
+                <input type="password" id="pass1" placeholder="Repetir contraseña" required> 
+                 </div>
+             </div>                
+                <a href="loginpage.html"></a><button class="botoniniciarsesion" type="submit" name="button">Registrarse</button></a>  -->
+    <!-- alertas de usuario ↓↓↓ -->
+    <!--                 <p class="warnings" id="warnings"></p>
+                <div class="forgot_or_register">
+                    <a class="texto-iniciarsesion" href="#"><h6>¿Ya tiene una cuenta? Iniciar sesión</h6></a>
+            </form>                      
+                </div>
+                <p class="otroslogin">--- o continuar con ---</p>
+                <div id="login_redes" ><i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-google'></i><i class='bx bxl-twitter'></i></div>
+        </div>        
+        </div>
+    </div> -->
+    <!-- </section> -->
+
+    <div class="info_extra"></div>
+    <script src="./public/js/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+//No olvidar variables y mixins plis chiquistriquis.
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.registro{
+    background: rgb(91,9,131);
+    background: linear-gradient(360deg, #6c63ff 0%, rgba(91,9,131,0.008823597798494398) 74%); 
+}
