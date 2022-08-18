@@ -22,13 +22,17 @@ app.get("/", (req,res) => {
     res.sendFile(__dirname + '/views/index.html')
 })
 
-app.get("/login", (req,res) => {
-    res.sendFile(__dirname + '/views/loginpage.html')
+app.get("/usuario/login", (req,res) => {
+    res.sendFile(__dirname + '/views/usuario/loginpage.html')
 })
 
 
-app.get("/registro", (req,res) => {
-    res.sendFile(__dirname + '/views/registro.html')
+app.get("/usuario/registro", (req,res) => {
+    res.sendFile(__dirname + '/views/usuario/registro.html')
+})
+
+app.get("/usuario/recuperar", (req,res) => {
+    res.sendFile(__dirname + '/views/usuario/recuperar.html')
 })
 
 
