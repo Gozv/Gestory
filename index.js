@@ -23,6 +23,10 @@ try{ //Intenta
 //Estaticas.
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Habilitar Pug
+app.set('view engine', 'pug')
+app.set('views', './views')
+
 
 //Levanto el server
 const port = 3000;
@@ -34,20 +38,20 @@ app.listen(port, ()=>{
 //Routing
 
 app.get("/", (req,res) => {
-    res.sendFile(__dirname + '/views/index.html')
+    res.render('../views/index')
 })
 
 app.get("/usuario/login", (req,res) => {
-    res.sendFile(__dirname + '/views/usuario/loginpage.html')
+    res.render('../views/usuario/loginpage')
 })
 
 
 app.get("/usuario/registro", (req,res) => {
-    res.sendFile(__dirname + '/views/usuario/registro.html')
+    res.render('../views/usuario/registro')
 })
 
 app.get("/usuario/recuperar", (req,res) => {
-    res.sendFile(__dirname + '/views/usuario/recuperar.html')
+    res.render('../views/usuario/recuperar')
 })
 
 

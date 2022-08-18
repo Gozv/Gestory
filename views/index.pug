@@ -1,0 +1,350 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Gestory
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='../css/app.css')
+  // Boxicons
+  link(href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/2c36e9b7b1.js' crossorigin='anonymous')
+  // Tailwind
+  link(rel='stylesheet' href='../css/tail.css')
+nav
+  .navegacion.container
+    .logo__container
+      button#switch.switch
+        span
+          i.fas.fa-sun
+        span
+          i.fas.fa-moon
+      a(href='/')
+        img(src='../img/Logo-pag.png' alt='Logo-pagina')
+      a(href='/')
+        h1.text-5xl Gestory
+    // ↓↓↓ Menu Desplegable ↓↓↓
+    section.menu__container
+      h1.menu__logo
+      ul.menu__links
+        li.menu__item
+          a.menu__link(href='#') Inicio
+        li.menu__item.menu__item--show
+          a.menu__link(href='#')
+            | Acerca 
+            img.menu__arrow(src='./assets/arrow.svg')
+          ul.menu__nesting
+            li.menu__inside
+              a.menu__link.menu__link--inside(href='#') Metodolog&iacute;as
+            li.menu__inside
+              a.menu__link.menu__link--inside(href='#') Trabajos
+            li.menu__inside
+              a.menu__link.menu__link--inside(href='#') Plantillas
+        li.menu__item.menu__item--show
+          a.menu__link(href='#')
+            | Projectos
+            img.menu__arrow(src='./assets/arrow.svg')
+          ul.menu__nesting
+            li.menu__inside
+              a.menu__link.menu__link--inside(href='#') Projects 1
+            li.menu__inside
+              a.menu__link.menu__link--inside(href='#') Projects 2
+            li.menu__inside
+              a.menu__link.menu__link--inside(href='#') Projects 3
+        li.menu__item
+          a.menu__link(href='#') Contactos
+      .menu__hamburguer
+        img.menu__img(src='./assets/menu.svg')
+    // ↑↑↑ Menu desplegable ↑↑↑
+    .nav__signin-signup
+      a(href='usuario/login') Ingresar
+      a.btn-dam(href='usuario/registro') Registro
+    button.btn
+      i.bx.bx-menu
+    button.btn
+      i.bx.bx-x
+section.banner__bg
+  .banner.container
+    .banner-left
+      .left-text
+        h2.text-6xl Gestiona tus trabajos
+        p
+          | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti iure officia consectetur vel
+          | recusandae pariatur unde harum ex facere eum enim, rem sit perspiciatis tenetur, alias
+          | reprehenderit.
+        .banner-btn
+          a.btn-primario(href='loginpage.html') Comenzar
+    .banner-right
+      img(src='../img/svg/undraw_team_up_re_84ok.svg' alt='')
+#superContenedor
+  .slider-contenedor
+    section.contenido-slider
+      div
+        h2
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
+          | sed. Quos cupiditate id delectus est.
+        a(href='#') Empezar
+      img(src='./assets/animacion.svg' alt='')
+    section.contenido-slider
+      div
+        h2
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
+          | sed. Quos cupiditate id delectus est.
+        a(href='#') Empezar
+      img(src='./assets/animacion2.svg' alt='')
+    section.contenido-slider
+      div
+        h2
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
+          | sed. Quos cupiditate id delectus est.
+        a(href='#') Empezar
+      img(src='./assets/animacion3.svg' alt='')
+    section.contenido-slider
+      div
+        h2
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
+          | sed. Quos cupiditate id delectus est.
+        a(href='#') Empezar
+      img(src='./assets/animacion4.svg' alt='')
+    section.contenido-slider
+      div
+        h2
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidem
+          | sed. Quos cupiditate id delectus est.
+        a(href='#') Empezar
+      img(src='./assets/animacion.svg' alt='')
+// Aca hay que arreglar el contenedor
+section.caracteristicas.container.seccion
+  h2.caracteristicas__heading.text-5xl &iquest;Por qu&eacute; elegir Gestory?
+  ul.caracteristicas__grid
+    li.caracteristica
+      .caracteristica__img
+        img(src='../img/svg/caracteristica1.svg' alt='')
+      .caracteristica__info
+        h3.caracteristica__nombre Modalidades de pago
+        p.caracteristica__descripcion
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          | Facere, aperiam.
+    li.caracteristica
+      .caracteristica__img
+        img(src='../img/svg/caracteristica2.svg' alt='')
+      .caracteristica__info
+        h3.caracteristica__nombre Orden
+        p.caracteristica__descripcion
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          | Facere, aperiam.
+    li.caracteristica
+      .caracteristica__img
+        img(src='../img/svg/caracteristica3.svg' alt='')
+      .caracteristica__info
+        h3.caracteristica__nombre Organizaci&oacute;n
+        p.caracteristica__descripcion
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          | Facere, aperiam.
+    li.caracteristica
+      .caracteristica__img
+        img(src='../img/svg/caracteristica4.svg' alt='')
+      .caracteristica__info
+        h3.caracteristica__nombre Dise&ntilde;os
+        p.caracteristica__descripcion
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          | Facere, aperiam.
+    li.caracteristica
+      .caracteristica__img
+        img(src='../img/svg/caracteristica5.svg' alt='')
+      .caracteristica__info
+        h3.caracteristica__nombre Personalizable
+        p.caracteristica__descripcion
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          | Facere, aperiam.
+    li.caracteristica
+      .caracteristica__img
+        img(src='../img/svg/caracteristica6.svg' alt='')
+      .caracteristica__info
+        h3.caracteristica__nombre Seguimientos
+        p.caracteristica__descripcion
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          | Facere, aperiam.
+section.organizacion.container.seccion
+  .organizacion__container
+    .organizacion__texto
+      h2.organizacion__heading.text-5xl La organizacion del trabajo hace la efectividad
+      p.organizacion__descripcion
+        | Empieza con tarjetas, listas y un tablero de Trello. Personaliza y
+        | ampl&iacute;a con m&aacute;s funciones tu trabajo en equipo a su mismo ritmo. Gestiona proyectos, organiza tareas
+        | y crea esp&iacute;ritu de equipo, en un solo lugar.
+    .organizacion__img
+      img(src='../img/imgej.webp' alt='')
+section.empresas.container.seccion
+  .empresas-sup
+    h3.mb-9 Las empresas que nos eligen
+    .sup-icon
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa1.svg' alt='')
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa2.svg' alt='')
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa3.svg' alt='')
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa4.svg' alt='')
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa5.svg' alt='')
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa6.svg' alt='')
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa7.svg' alt='')
+      .icon-img
+        img(src='../img/svg/logos-empresas/empresa8.svg' alt='')
+  .empresas-inf
+    .inf
+      h4 Eres mi bebe
+      p
+        | Enr&oacute;llame as&iacute;
+        | Con az&uacute;car en polvo, end&uacute;lzame
+        | Y es que t&uacute; eres mi rey
+        | Qu&eacute; lindo eres t&uacute;, eres mi beb&eacute;
+        | Mi bebito Fiu Fiu
+        | Caramelo de chocolate
+        | Emp&aacute;pame as&iacute;
+        | Como un pionono de vitrina
+        | Enr&oacute;llame as&iacute;
+        | Con az&uacute;car en polvo, end&uacute;lzame
+        | Y es que t&uacute; eres mi rey
+        | Qu&eacute; lindo eres t&uacute;, eres mi beb&eacute;
+        | Mi bebito Fiu Fiu
+        | (Qu&eacute; lindo eres t&uacute;, eres mi beb&eacute;
+        | Mi bebito fiu fiu)
+        | En mis l&aacute;grimas te mir&eacute;
+        | En mis tristezas yo te bes&eacute;
+    .inf
+      h4 Mi bebito fiu fiu
+      p
+        | Me aprend&iacute; de memoria aquella estupidez
+        | &quot;Es mejor que te amen a que ames t&uacute;&quot;
+        | Hmm, vaya la inmadurez, fue casi la inmediatez
+        | En que no pude ni un d&iacute;a m&aacute;s vivir sin ti
+        | Caramelo de chocolate
+        | Emp&aacute;pame as&iacute;
+        | Como un pionono de vitrina
+        | Enr&oacute;llame as&iacute;
+        | Con az&uacute;car en polvo, end&uacute;lzame
+        | Y es que t&uacute; eres mi rey
+        | Qu&eacute; lindo eres t&uacute;, eres mi beb&eacute;
+        | Mi bebito Fiu Fiu
+        | (Qu&eacute; lindo eres t&uacute;, eres mi beb&eacute;
+        | Mi bebito Fiu Fiu)
+section.profesionales.seccion.container
+  .profesionales-heading
+    h3.text-5xl.mb-4 Nuestro equipo de expertos
+    p.text-center
+      | Lorem Ipsum es simplemente texto de relleno de la industria de la impresi&oacute;n y la
+      | composici&oacute;n
+      | tipogr&aacute;fica
+  .card
+    .card__perfil
+      .card__contact
+        i.bx.bxl-linkedin
+        i.bx.bxl-twitter
+      .card__nombre
+        img(src='https://www.markuptag.com/images/user-img-1.jpg' alt='')
+        h2 Pablo Gomez
+        p Dise&ntilde;ador web
+      hr
+      .card__descripcion
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+          | veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
+          | temporibus
+          | rerum hic iste nulla vitae?
+      hr
+      .card__button
+        a.enlace(href='#') Saber m&aacute;s
+    .card__perfil
+      .card__contact
+        i.bx.bxl-linkedin
+        i.bx.bxl-twitter
+      .card__nombre
+        img(src='https://www.markuptag.com/images/user-img-2.jpg' alt='')
+        h2 Mateo Rojas
+        p Desarrollador web
+      hr
+      .card__descripcion
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+          | veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
+          | temporibus
+          | rerum hic iste nulla vitae?
+      hr
+      .card__button
+        a.enlace(href='#') Saber m&aacute;s
+    .card__perfil
+      .card__contact
+        i.bx.bxl-linkedin
+        i.bx.bxl-twitter
+      .card__nombre
+        img(src='https://www.markuptag.com/images/user-img-3.jpg' alt='')
+        h2 Salim Malik
+        p Desarrollador front-end
+      hr
+      .card__descripcion
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+          | veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum
+          | temporibus
+          | rerum hic iste nulla vitae?
+      hr
+      .card__button
+        a.enlace(href='#') Saber m&aacute;s
+//
+  <section class="gallery container seccion">
+  <img class="img-container" src="/public/img/fotos-grid/img1.jpg" alt="img-galeria">
+  <img class="img-container" src="/public/img/fotos-grid/img2.jpg" alt="img-galeria">
+  <img class="img-container" src="/public/img/fotos-grid/img3.jpg" alt="img-galeria">
+  <img class="img-container" src="/public/img/fotos-grid/img4.jpg" alt="img-galeria">
+  </section>
+section.newsletter.container.seccion
+  form(action='')
+    h2.text-5xl.mb-4 Unite a nuestro NewSletter
+    p
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eveniet ratione delectus vero animi
+      | non. Tempore assumenda porro excepturi aliquam.
+    .email-box
+      i.bx.bxs-envelope
+      input(type='email' placeholder='Ingrese su email')
+      button(type='button' name='button') Suscribite
+footer.footer
+  .container.footer-grid
+    .footer-widget.footer-title
+      img(src='../img/Logo-pag.png' alt='footer-icon')
+      h2 Gestory
+    .footer-widget
+      h3 Acerca
+      ul
+        li
+          a(href='#') Soluciones
+        li
+          a(href='#') Soluciones
+        li
+          a(href='#') Soluciones
+    .footer-widget
+      h3 Aplicaciones
+      ul
+        li
+          a(href='#') Soluciones
+        li
+          a(href='#') Soluciones
+        li
+          a(href='#') Soluciones
+    .footer-widget
+      h3 Contacto
+      ul
+        li
+          a(href='#') Soluciones
+        li
+          a(href='#') Soluciones
+        li
+          a(href='#') Soluciones
+  p.footer-copy &copy; Gestory - Todos los derechos reservados
+script(src='../js/app.js')
