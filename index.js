@@ -1,11 +1,8 @@
+//Importaciones
 import express from "express";
-import path from "path";
 import db from "./config/db.js";
-import { fileURLToPath }  from "url";
+import usuariosRoutes from "./routes/usuariosRoutes.js";
 
-//Recreo la funcionalidad de "Dirname"
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 //Creo la app
 const app = express();
@@ -21,10 +18,10 @@ try{ //Intenta
 
 
 //Estaticas.
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
-//Habilitar Pug
-app.set('view engine', 'pug')
+//Habilitar Ejs
+app.set('view engine', 'ejs')
 app.set('views', './views')
 
 
@@ -35,23 +32,5 @@ app.listen(port, ()=>{
     console.log(`Levanto el server en el puerto ${port}`);
 })
 
-//Routing
-
-app.get("/", (req,res) => {
-    res.render('../views/index')
-})
-
-app.get("/usuario/login", (req,res) => {
-    res.render('../views/usuario/loginpage')
-})
-
-
-app.get("/usuario/registro", (req,res) => {
-    res.render('../views/usuario/registro')
-})
-
-app.get("/usuario/recuperar", (req,res) => {
-    res.render('../views/usuario/recuperar')
-})
-
-
+//Routing ||Usamos Routes para ordenar las rutas
+app.use('/', usuariosRoutes)
