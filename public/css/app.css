@@ -15,33 +15,18 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: 12rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   background-color: #ffffff;
   height: 100vh;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(180deg, rgb(157, 228, 228) 0%, rgba(45, 203, 253, 0.0088235978) 40%);
+  background: rgb(42, 44, 44);
+  background: linear-gradient(180deg, rgb(188, 200, 200) 0%, rgba(45, 203, 253, 0.0088235978) 40%);
   background-repeat: no-repeat;
-}
-body.dark {
-  background: #262626;
-}
-body.dark h1, body.dark h2, body.dark h3, body.dark h4 {
-  color: #ffffff;
-}
-body.dark .caracteristicas h3 {
-  color: #0367A6;
-}
-body.dark p {
-  color: #ffffff;
-}
-body.dark .empresas p {
-  color: #ffffff;
-}
-body.dark .newsletter {
-  background-color: #262626;
-  box-shadow: 10px 15px 15px #0367A6;
 }
 
 a {
@@ -130,8 +115,37 @@ ul {
   object-fit: cover;
 }
 
+.dark {
+  background: #262626;
+}
+.dark h1, .dark h2, .dark h3, .dark h4 {
+  color: #ffffff;
+}
+.dark .caracteristicas h3 {
+  color: #0367A6;
+}
+.dark p {
+  color: #ffffff;
+}
+.dark .empresas-sup h3 {
+  color: #ffffff;
+}
+.dark .empresas .inf p {
+  color: #ffffff;
+}
+.dark .newsletter {
+  background-color: #262626;
+  box-shadow: 10px 15px 15px #0367A6;
+}
+.dark a, .dark li {
+  color: #ffffff;
+}
+.dark .iniciodesesion i {
+  color: #ffffff;
+}
+
 nav {
-  width: 100vw;
+  width: 100%;
   display: grid;
   place-items: center;
   position: fixed;
@@ -528,7 +542,6 @@ nav {
 .footer {
   background-color: #0367A6;
   color: #ffffff;
-  margin-top: 5rem;
 }
 .footer .footer-title {
   display: flex;
@@ -921,6 +934,7 @@ nav {
   text-align: center;
   padding: 2rem 0;
   box-shadow: 5px 5px 10px #0367A6;
+  margin-bottom: 5rem;
 }
 @media (max-width: 480px) {
   .newsletter {
@@ -1160,7 +1174,7 @@ nav {
 
 #pantalla-dividida {
   display: flex;
-  background-color: white;
+  /*  background-color: white; */
 }
 
 .parteizq {
@@ -1239,6 +1253,11 @@ nav {
 .registro {
   background: rgb(91, 9, 131);
   background: linear-gradient(360deg, #6c63ff 0%, rgba(91, 9, 131, 0.0088235978) 74%);
+}
+
+.metodologias .metodologias__heading a:hover {
+  color: #0367A6;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=app.css.map */

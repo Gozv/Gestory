@@ -1,0 +1,12 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+
+.metodologias{
+  .metodologias__heading{
+    a:hover{
+      color: v.$celeste_uno;
+      transform: scale(1.2);
+    }
+  }
+}

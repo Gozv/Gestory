@@ -1,22 +1,27 @@
 <%- include("../layout/head.ejs")  %> 
 
 <body>
+    <%- include('../layout/header.ejs')  %> 
+
     <section class="inicio_de_sesion"><a href="/"><i class="bx bx-left-arrow-alt" id="volver_atras"></i></a>
         <div id="pantalla-dividida">
-            <div class="parteizq">
-                <div class="todo">
+            <div class="parteizq pt-32">
+                <div class="todo ">
                     <div class="junto">
                         <h2 id="Gestory">Gestory</h2>
                         <div class="iniciodesesion">
                             <div class="email">
-                                <form id="form" action="" method="POST"><i class="bx bx-user" id="icon"></i>
-                                    <input class="mx-2" id="email1" type="email" placeholder="Correo electrónico o usuario" required="">
+                                <form id="form" action="" method="POST">
+                                    <i class="bx bx-user" id="icon"></i>
+                                    <input class="mx-2 text-white" id="email1" type="email" placeholder="Correo electrónico o usuario" required="">
                                 </form>
                             </div>
-                            <div class="pass contraseña"><i class="bx bx-lock-alt" id="icon"></i>
-                                <input class="mx-2" id="pass1" type="password" placeholder="Contraseña" required=""></div>
-                        </div><a href="/usuario/login"></a><button class="botoniniciarsesion" type="submit"
-                            name="button">Iniciar sesi&oacute;n</button><!-- alertas de usuario ↓↓↓-->
+                            <div class="pass contraseña">
+                                <i class="bx bx-lock-alt" id="icon"></i>
+                                <input class="mx-2" id="pass1" type="password" placeholder="Contraseña" required="">
+                            </div>
+                        </div>
+                        <button class="botoniniciarsesion" type="submit"name="button"><a href="/usuario/login">Iniciar Sesión</a></button><!-- alertas de usuario ↓↓↓-->
                         <p class="warnings" id="warnings"></p>
                         <div class="forgot_or_register"><a href="/usuario/recuperar">
                                 <h6>&iquest;Olvidaste tu contrase&ntilde;a?</h6>
@@ -31,12 +36,13 @@
                     </div>
                 </div>
             </div>
-            <div class="parteder"><img id="svg" src="../img/svg/undraw_futuristic_interface_re_0cm6.svg" alt="">
+            <div class="parteder pt-32"><img id="svg" src="../img/svg/undraw_futuristic_interface_re_0cm6.svg" alt="">
                 <div class="logo__container"><a href="/"><img class="logo_pag" src="../img/Logo-pag.png"
                             alt="Logo-pagina"></a></div>
             </div>
         </div>
     </section>
-    <div class="info_extra"></div>
+
     <script src="../js/formulario.js"></script>
+    <script src="../js/darkMode.js"></script>
 </body>
