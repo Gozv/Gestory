@@ -1,0 +1,35 @@
+<%- include("../layout/head.ejs")  %> 
+
+<body>
+    <section class="inicio_de_sesion"><a href="/"><i class="bx bx-left-arrow-alt" id="volver_atras"></i></a>
+        <div id="pantalla-dividida">
+            <div class="parteizq">
+                <div class="todo">
+                    <div class="junto">
+                        <h2 id="Gestory">Gestory</h2>
+                        <div class="iniciodesesion">
+                            <div class="email">
+                                <form id="form" action="" method="POST"><i class="bx bx-user" id="icon"></i><input id="email1" type="email" placeholder="Correo electrónico o usuario" required=""></form>
+                            </div>
+                        </div><a href="usuario/login"></a><button class="botoniniciarsesion" type="submit" name="button">Recuperar cuenta</button><!-- alertas de usuario ↓↓↓-->
+                        <p class="warnings" id="warnings"></p>
+                        <div class="forgot_or_register"><a href="/usuario/login">
+                                <h6>Iniciar sesi&oacute;n</h6>
+                            </a>
+                            <p>&#x30FB;</p><a class="texto-registrarse" href="/usuario/registro">
+                                <h6>Registrarse</h6>
+                            </a>
+                        </div>
+                        <p class="otroslogin">--- o continuar con ---</p>
+                        <div id="login_redes"><i class="bx bxl-facebook-circle"></i><i class="bx bxl-google"></i><i class="bx bxl-twitter"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="parteder"><img id="svg" src="../img/svg/undraw_futuristic_interface_re_0cm6.svg" alt="">
+                <div class="logo__container"><a href="/"><img class="logo_pag" src="../img/Logo-pag.png" alt="Logo-pagina"></a></div>
+            </div>
+        </div>
+    </section>
+    <div class="info_extra"></div>
+    <script src="./public/js/formulario.js"></script>
+</body>

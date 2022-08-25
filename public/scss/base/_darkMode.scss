@@ -1,0 +1,40 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+.dark {
+    //Landing
+    background: v.$gris_oscuro;
+
+    h1,h2,h3,h4{
+        color: v.$blanco;
+    }
+    .caracteristicas h3{
+        color: v.$celeste_uno;
+    }
+    p{
+        color: v.$blanco;
+    }
+    
+    .empresas-sup h3{
+        color: v.$blanco;
+    }
+
+    .empresas .inf p{
+        color: v.$blanco;
+    }
+
+    .newsletter{
+        background-color: v.$gris_oscuro;
+        box-shadow: 10px 15px 15px v.$celeste_uno;
+    }
+    a,li{
+        color: v.$blanco;
+    }
+
+    //Login
+    .iniciodesesion{
+        i{
+            color: v.$blanco;
+        }
+    }
+}
