@@ -1,7 +1,10 @@
 //Importaciones
 import express from "express";
 import usuariosRoutes from "./routes/usuariosRoutes.js";
-import ("./config/db.js")
+
+import('./config/db.js');
+
+
 
 //Creo la app
 const app = express();
@@ -17,7 +20,9 @@ app.set('views', './views')
 
 
 //Levanto el server
-const port = process.env.PORT || 3000;
+
+const port = process.env.PORT || 5000;
+
 
 app.listen(port, ()=>{
     console.log(`Levanto el server en el puerto ${port}`);

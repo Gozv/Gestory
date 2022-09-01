@@ -9,18 +9,16 @@
                 <div class="todo ">
                     <div class="junto">
                         <h2 id="Gestory">Gestory</h2>
-                        <div class="iniciodesesion">
-                            <div class="email">
-                                <form id="form" action="" method="POST">
-                                    <i class="bx bx-user" id="icon"></i>
-                                    <input class="mx-2 text-white" id="email1" type="email" placeholder="Correo electrónico o usuario" required="">
-                                </form>
+                        <form class="iniciodesesion" action="" method="POST">
+                            <div class="user">
+                                <i class="bx bx-user mx-2"  id="icon"></i>
+                                <input id="user" type="email" placeholder="Nombre de usuario" required="">
                             </div>
-                            <div class="pass contraseña">
-                                <i class="bx bx-lock-alt" id="icon"></i>
-                                <input class="mx-2" id="pass1" type="password" placeholder="Contraseña" required="">
+                            <div class="password">
+                                <i class="bx bx bx-lock-alt mx-2" id="icon"></i>
+                                <input id="password" type="password" placeholder="Su Password" required="">
                             </div>
-                        </div>
+                        </form>
                         <button class="botoniniciarsesion" type="submit"name="button"><a href="/usuario/login">Iniciar Sesión</a></button><!-- alertas de usuario ↓↓↓-->
                         <p class="warnings" id="warnings"></p>
                         <div class="forgot_or_register"><a href="/usuario/recuperar">
