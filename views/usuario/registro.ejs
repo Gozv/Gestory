@@ -9,32 +9,25 @@
                 <div class="todo">
                     <div class="junto">
                         <h2 id="Gestory">Gestory</h2>
-                        <div class="iniciodesesion">
-                            <div class="email">
-                                <form id="form" action="" method="POST">
-                                    <i class="bx bx-user mx-2"  id="icon"></i>
-                                    <input id="email1" type="email" placeholder="Nombre de usuario" required="">
-                                </form>
+                        <form class="iniciodesesion" action="./registro" method="POST">
+                            <div class="user">
+                                <i class="bx bx-user mx-2"  id="icon"></i>
+                                <input id="user" type="email" placeholder="Nombre de usuario" required="" name="user">
                             </div>
                             <div class="email">
-                                <form id="form" action="" method="POST">
-                                    <i class="bx bx-envelope mx-2" id="icon"></i>
-                                    <input id="email1" type="email" placeholder="Correo electrónico" required="">
-                                </form>
+                                <i class="bx bx-envelope mx-2" id="icon"></i>
+                                <input id="email1" type="email" placeholder="Correo electrónico" required=""  name="email">
                             </div>
-                            <div class="email">
-                                <form id="form" action="" method="POST">
-                                    <i class="bx bx bx-lock-alt mx-2" id="icon"></i>
-                                    <input id="email1" type="email" placeholder="Correo electrónico" required="">
-                                </form>
+                            <div class="password">
+                                <i class="bx bx bx-lock-alt mx-2" id="icon"></i>
+                                <input id="password" type="password" placeholder="Su Password" required="" name="password">
                             </div>
-                            <div class="email">
-                                <form id="form" action="" method="POST">
-                                    <i class="bx bx bx-lock-alt mx-2" id="icon"></i>
-                                    <input id="email1" type="email" placeholder="Correo electrónico" required="">
-                                </form>
+                            <div class="rep-password">
+                                <i class="bx bx bx-lock-alt mx-2" id="icon"></i>
+                                <input id="rep-password" type="password" placeholder="Su Password" required="" name="rep-password">
                             </div>
-                        </div><a href="usuario/login"></a><button class="botoniniciarsesion" type="submit" name="button">Iniciar sesi&oacute;n</button><!-- alertas de usuario ↓↓↓-->
+                        </form>
+                        <a href="usuario/login"></a><button class="botoniniciarsesion" type="submit" name="button">Iniciar sesi&oacute;n</button><!-- alertas de usuario ↓↓↓-->
                         <p class="warnings" id="warnings"></p>
                         <div class="forgot_or_register"><a href="/usuario/recuperar">
                                 <h6>&iquest;Olvidaste tu contrase&ntilde;a?</h6>
