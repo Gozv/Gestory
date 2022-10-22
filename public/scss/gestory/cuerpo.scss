@@ -1,0 +1,74 @@
+#body{
+    background-color: rgb(83, 82, 82);
+}
+
+.tableros{
+    flex: 1;
+    width: 100%;
+    overflow-x: auto;
+    padding: 1.2rem;
+}
+
+.tareas-cuerpo{
+    min-width: fit-content;
+    display: flex;
+    gap: 3rem;
+}
+
+.tareas-top{
+    gap: 2rem;
+
+    h2{
+        font-size: 2.25rem; 
+        font-weight: bold;
+    }
+}
+
+.tareas-titulo_principal{
+    display: flex;
+    flex: 1;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+    background-color: #ebecf0;
+
+    i{
+        font-size: 3rem;
+        position: relative;
+        display: flex;
+        margin-right: 1rem;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+}
+
+.primer-tab{
+    max-width: 290px;
+    overflow-y: auto;
+    min-height: fit-content;
+}
+
+.tareas-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 0.625rem;
+    padding-top: 1rem;
+    border-bottom: 0.625rem;
+    border-top: 0.625rem;
+    background-color: #ebecf0;
+    max-width: 290px;
+    overflow-y: auto;
+}
+
+.tarjeta{
+    background-color: #ebecf0;
+}
+
+#agregar:hover{
+    border-radius: 3px;
+    background-color: rgba(87, 87, 97, 0.233);
+    transition: 0.3s;
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+.card-titulo{
+    font-weight: bold;
+}
+
+.card-estilo{
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    margin-top: 8px;
+    min-width: 20px;
+    max-width: 300px;
+    background-color: #ebecf0;
+
+    #nueva-tarea-input{
+        width: 100%;     
+        max-height: 240px;
+        overflow-y: scroll;
+        height: 80px;
+        margin-top: 2px;
+    }
+    
+    #nueva-tarea-submit{
+        background-color: rgb(51, 65, 85);
+        padding: 0.6rem;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 1.3rem;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+
+    #contenido{
+        display: flex;
+    
+        .icon{
+            position: absolute;
+            font-size: 2.25rem;
+            left: 88%;
+            top: 26%;
+            color: #4c5a72;
+            cursor: pointer;
+    /*         opacity: 0; */
+        }
+    
+    /*     i:hover{
+            opacity: 1;
+            transition: 0.2s;
+            animation-timing-function: ease-in-out;
+        } */
+    }
+    
+}
+
+#nueva-tarea-input{
+    background-color: #fff;
+    flex: 1 1 0%;
+    word-wrap: break-word;
+}
+
+.tarea{
+    background-color: #ebecf0;
+}
+
+#tareas{
+    background-color: #ebecf0;
+}
+
+.actions{
+    background-color: #ebecf0;
+}
+
+.text{
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    box-shadow: 2px 4px 3px -4px rgba(41,41,41,0.75);
+    cursor: move;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.edit{
+    background-color: rgb(51, 65, 85);
+    padding: 0.6rem;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    margin: 0.5rem;
+}
+
+.actions{
+    display: flex;
+    align-content: flex-end;
+
+    #equis{
+        i{
+            font-size: 2.8rem;
+            text-align: center;
+            padding-top: 8px;
+        }
+    }    
+}

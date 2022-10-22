@@ -1367,4 +1367,192 @@ nav {
   transition: all 1s 400ms ease;
 }
 
+.gestor_de_tareas {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.gestor_de_tareas h1 {
+  padding: 1.2rem 1.5rem;
+  /*         border-bottom: 2px solid #6a778b63; */
+  display: block;
+}
+
+#body {
+  background-color: rgb(83, 82, 82);
+}
+
+.tableros {
+  flex: 1;
+  width: 100%;
+  overflow-x: auto;
+  padding: 1.2rem;
+}
+
+.tareas-cuerpo {
+  min-width: fit-content;
+  display: flex;
+  gap: 3rem;
+}
+
+.tareas-top {
+  gap: 2rem;
+}
+.tareas-top h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.tareas-titulo_principal {
+  display: flex;
+  flex: 1;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  justify-content: space-between;
+  background-color: #ebecf0;
+}
+.tareas-titulo_principal i {
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  margin-right: 1rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.primer-tab {
+  max-width: 290px;
+  overflow-y: auto;
+  min-height: fit-content;
+}
+
+.tareas-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  padding-top: 1rem;
+  border-bottom: 0.625rem;
+  border-top: 0.625rem;
+  background-color: #ebecf0;
+  max-width: 290px;
+  overflow-y: auto;
+}
+
+.tarjeta {
+  background-color: #ebecf0;
+}
+
+#agregar:hover {
+  border-radius: 3px;
+  background-color: rgba(87, 87, 97, 0.233);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-titulo {
+  font-weight: bold;
+}
+
+.card-estilo {
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  min-width: 20px;
+  max-width: 300px;
+  background-color: #ebecf0;
+}
+.card-estilo #nueva-tarea-input {
+  width: 100%;
+  max-height: 240px;
+  overflow-y: scroll;
+  height: 80px;
+  margin-top: 2px;
+}
+.card-estilo #nueva-tarea-submit {
+  background-color: rgb(51, 65, 85);
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.card-estilo #contenido {
+  display: flex;
+  /*     i:hover{
+          opacity: 1;
+          transition: 0.2s;
+          animation-timing-function: ease-in-out;
+      } */
+}
+.card-estilo #contenido .icon {
+  position: absolute;
+  font-size: 2.25rem;
+  left: 88%;
+  top: 26%;
+  color: #4c5a72;
+  cursor: pointer;
+  /*         opacity: 0; */
+}
+
+#nueva-tarea-input {
+  background-color: #fff;
+  flex: 1 1 0%;
+  word-wrap: break-word;
+}
+
+.tarea {
+  background-color: #ebecf0;
+}
+
+#tareas {
+  background-color: #ebecf0;
+}
+
+.actions {
+  background-color: #ebecf0;
+}
+
+.text {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 1rem;
+  width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  box-shadow: 2px 4px 3px -4px rgba(41, 41, 41, 0.75);
+  cursor: move;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.edit {
+  background-color: rgb(51, 65, 85);
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  align-content: flex-end;
+}
+.actions #equis i {
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 8px;
+}
+
 /*# sourceMappingURL=app.css.map */

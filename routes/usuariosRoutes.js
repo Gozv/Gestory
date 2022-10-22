@@ -1,7 +1,7 @@
 import express from "express";
 import {landing, login,registro,recuperar} from "../controllers/usuarioControllers.js";
 import metodologias from "../controllers/acercaControllers.js"
-
+import { tarea } from "../controllers/gestoryControllers.js";
 
 const router = express.Router();
 
@@ -25,6 +25,8 @@ router.get("/acerca/metodologias", metodologias);
 
 //Routing | Usuario
 
+//Routing | Gestor de tareas
+router.get("/gestory/tarea", tarea)
 
 
 export default router;
