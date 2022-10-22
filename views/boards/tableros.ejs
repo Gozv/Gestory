@@ -1,0 +1,62 @@
+<%- include("../layout/head.ejs")  %> 
+<body>
+
+<!-- W.I.P -->
+<!-- estaba trabajando en esta parte pero a último momento lo dropee y me puse a hacer el gestor de tareas, por eso está tan así nomas lol-->
+
+<section>
+    <div class="nav_el flex">
+        <a href="/"><div class="logo">
+            <img src="../img/Logo-pagALT.png" alt="Logo página">
+            <h1 class="font-bold text-5xl">Gestory</h1>
+        </div></a>
+        <div class="paths">
+            <p>gardenia</p>
+            <p>bel air</p>
+            <p>apres midi</p>
+            <a href="/Gestory/views/gestory/tarea.ejs"><i class='bx bx-plus text-4xl text-white flex self-center'></i></a> <!-- no redirige a gestory/tarea por alguna razón ?? PREGUNTAR -->
+        </div>
+        <div class="busqueda">
+            <span class="lupita">
+                <i id="icons" class='bx bx-search-alt-2'></i>
+            </span>
+            <input type="text" placeholder="Buscar">
+        </div>
+        <div class="user"> 
+            <i id="icons" class='bx bx-bell'></i>
+            <i id="icons" class='bx bx-user-circle' ></i>
+        </div>
+    </div>
+</section>    
+
+<div class="contenedor">
+<section>
+    <div class="menu_izq">
+        <a href=""><h4>Tableros</h4></a>
+        <a href=""><h4>Plantillas</h4></a>
+        <a href=""><h4>Notificaciones</h4></a>
+        <hr class="hr">
+        <div class="tableros_activos">
+            <div class="flex esp">
+            <h5>Mis espacios de trabajo<button class="text-4xl text-center text-[#5e6c84]"><i id="icon-izq" class='bx bx-plus'></i></button></h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="principal">
+        <div class="recientes">
+            <h2><i id="icon-p" class='bx bx-time-five'></i>Tableros recientes</h2>
+            <div class='text-[#5e6c84]'>sorrows</div>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="espacios">
+            <h2><i id="icon-p" class='bx bx-edit-alt'></i>Tus espacios de trabajo</h2>
+            <p>Lorem ipsum dolor sit relleno.</p>
+        </div>
+    </div>
+</section>
+</div>
+
+</body>

@@ -1555,4 +1555,145 @@ input, button {
   padding-top: 8px;
 }
 
+body {
+  background-color: rgb(43, 42, 42);
+}
+
+.nav_el {
+  background-color: #0367A6;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.4rem 0 0.4rem;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  margin: 0 1rem;
+  /*    padding-left: 0.4rem; */
+}
+.logo h1 {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+.logo img {
+  width: auto;
+  height: 3.3rem;
+}
+
+.paths {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.paths i {
+  background-color: #172b4d;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 55px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.busqueda {
+  position: relative;
+  margin: 0 1rem;
+  border-radius: 4px;
+  display: flex;
+}
+.busqueda input {
+  border-style: hidden hidden solid;
+  border-color: white;
+  border-bottom-width: 0.5px;
+  text-overflow: ellipsis;
+}
+.busqueda i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.user {
+  display: flex;
+  font-size: 2.6rem;
+  gap: 1.2rem;
+  margin: 0 1.6rem;
+}
+
+#icons {
+  color: #ffffff;
+}
+
+.menu_izq {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2.5rem 1rem 0;
+}
+.menu_izq h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #172b4d;
+  padding: 0.6rem 0.8rem 0.6rem 0;
+}
+.menu_izq h4:hover {
+  color: #0f69a1;
+  background-color: rgba(187, 197, 204, 0.2);
+  border-radius: 0.5rem;
+  animation: 0.2s;
+}
+.menu_izq h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #5e6c84;
+  padding: 0.6rem 0.8rem 0.6rem 0;
+}
+.menu_izq .tableros_activos {
+  display: flex;
+}
+.menu_izq .tableros_activos #icon-izq {
+  color: #5e6c84;
+  padding-left: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+.menu_izq .hr {
+  border-bottom: 1rem;
+  border-bottom: 2px solid #6a778b;
+  opacity: 0.5;
+  width: 90%;
+}
+
+body {
+  background-color: white;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*     margin: 1.5rem; */
+  width: 100%;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 1rem 0;
+}
+.principal h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #172b4d;
+}
+.principal #icon-p {
+  padding-right: 0.4rem;
+  color: #172b4d;
+}
+
 /*# sourceMappingURL=app.css.map */

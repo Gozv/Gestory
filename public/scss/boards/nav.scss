@@ -1,0 +1,81 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+body{
+    background-color: rgb(43, 42, 42);
+}
+
+.nav_el{
+    background-color: v.$celeste_uno;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.4rem 0 0.4rem;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    margin: 0 1rem;
+ /*    padding-left: 0.4rem; */
+
+    h1{
+        margin-left: 0.5rem;
+        font-weight: 600;
+        padding-left: 1rem;
+    }
+
+    img{
+        width: auto;
+        height: 3.3rem;
+    }
+}
+
+.paths{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    i{
+        background-color: #172b4d;
+        border: none;
+        border-radius: 10px;
+        padding: 0.5rem;
+        width: 55px;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+
+.busqueda{
+    position:relative;
+    margin: 0 1rem;
+    border-radius: 4px;
+    display: flex;
+
+    input{
+        border-style: hidden hidden solid;
+        border-color: white;
+        border-bottom-width: 0.5px;
+        text-overflow: ellipsis;
+    }
+
+    i{
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+}
+
+.user{
+    display: flex;
+    font-size: 2.6rem;
+    gap: 1.2rem;
+    margin: 0 1.6rem;
+}
+
+#icons{
+    color: v.$blanco;
+}
