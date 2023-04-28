@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start" : "node index.js",
     "server": "nodemon index.js",
     "dev": "sass --watch public/scss/app.scss:public/css/app.css ",
     "tw": "postcss public/css/tailwind.css -o public/css/tail.css --watch"
