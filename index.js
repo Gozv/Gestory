@@ -2,7 +2,7 @@
 const express = require("express");
 const usuariosRoutes = require("./routes/usuariosRoutes.js");
 
-require('./config/db.js');
+// const db = require('./config/db.js');
 
 
 
