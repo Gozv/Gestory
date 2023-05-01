@@ -5,6 +5,6 @@ const tarea = (req,res) =>{
 }
 
 
-export {
+module.exports = {
     tarea
 }

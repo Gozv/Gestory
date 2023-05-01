@@ -5,6 +5,6 @@ const tableros = (req,res) =>{
 }
 
 
-export {
+module.exports = {
     tableros
 }

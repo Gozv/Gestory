@@ -1,8 +1,8 @@
-import express from "express";
-import {landing, login,registro,recuperar} from "../controllers/usuarioControllers.js";
-import metodologias from "../controllers/acercaControllers.js"
-import { tarea } from "../controllers/gestoryControllers.js";
-import { tableros } from "../controllers/boardsControllers.js";
+const express = require("express");
+const {landing, login,registro,recuperar} = require("../controllers/usuarioControllers.js");
+const metodologias = require("../controllers/acercaControllers.js")
+const { tarea } = require("../controllers/gestoryControllers.js");
+const { tableros } = require("../controllers/boardsControllers.js");
 
 const router = express.Router();
 
@@ -31,4 +31,4 @@ router.get("/boards/tableros", tableros);
 router.get("/gestory/tarea", tarea);
 
 
-export default router;
+module.exports = router;

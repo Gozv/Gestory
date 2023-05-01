@@ -1,8 +1,8 @@
 //Importaciones
-import express from "express";
-import usuariosRoutes from "./routes/usuariosRoutes.js";
+const express = require("express");
+const usuariosRoutes = require("./routes/usuariosRoutes.js");
 
-import('./config/db.js');
+require('./config/db.js');
 
 
 
