@@ -1,0 +1,208 @@
+<%- include("../layout/head.ejs")  %> 
+
+<!-- checklist 
+[]arreglar demás tableros
+[]arreglar botones de editar y borrar -->
+
+<body id="body">
+    
+    <div class="gestor_de_tareas">
+        <div class="tareas-nav">
+            <a href="/"><h1 class="border-b-2 text-gray-800 font-bold text-7xl">Gestory</h1></a>    
+        </div>
+        <div class="tableros">
+            <div class="tareas-cuerpo"> 
+                <div class="primer-tab">            
+                    <div class="tareas-top">
+                        <div class="tareas-titulo_principal">
+                            <h2 contenteditable="true">Backlog</h2>
+                            <i class='leading-9 flex text-center text-4xl bx bx-dots-horizontal-rounded'></i>            
+                        </div>
+                    </div>    
+                    <div class="tareas-cards">
+                        <div class="tarjeta">                    
+                            <div id="tareas">
+                            <!--   <div class="tarea">
+                                        <div class="card-estilo" id="contenido">
+                                            <input 
+                                                type="text" 
+                                                class="text" 
+                                                value="Una nueva tarea"
+                                                readonly>
+                                                <i class='bx bx-edit-alt'></i>    
+                                        </div>
+                                        <div class="actions">
+                                                <button class="edit">Editar</button>
+                                                <button class="borrar"><i id="equis" class='text-4xl bx bx-x'></i></button>
+                                        </div>
+                                </div> -->  
+                            </div>
+
+                            <form id="nueva-tarea-form" class="card-estilo">
+                                <textarea 
+                                    placeholder="Agregar tarea..." 
+                                    name="nueva-tarea-input" 
+                                    id="nueva-tarea-input" 
+                                    cols="30" 
+                                    rows="10"></textarea>
+                                    <input 
+                                        type="submit" 
+                                        id="nueva-tarea-submit"
+                                        value="Agregar tarea">  
+                            </form>
+                        </div>
+                        <!-- <span id="agregar" class="justify-items-start flex font-bold text-gray-600"><i class='text-3xl font-bold bx bx-plus'></i>Agregar tarjeta</span>  -->
+                    </div>             
+                </div>
+                
+                <!-- ==== A PARTIR DE ABAJO NO FUNCIONA (W.I.P) ==== -->
+
+                <div class="2do-tab">            
+                    <div class="tareas-top">
+                        <div class="tareas-titulo_principal">
+                            <h2 contenteditable="true">To do<span class="text-2xl pl-3 text-gray-400">1</span>
+                            </h2>
+                            <i class='leading-9 flex text-center text-4xl bx bx-dots-horizontal-rounded'></i>            
+                        </div>
+                    </div>    
+                        <div class="tareas-cards">
+                <div class="tarjeta">                    
+                    <div id="tareas">
+                        <div class="tarea">
+                                <div class="card-estilo" id="contenido">
+                                        <input 
+                                            type="text" 
+                                            class="text" 
+                                            value="Una nueva tarea"
+                                            readonly>
+                                </div>
+                                <!-- <div class="actions">
+                                            <button class="edit">Editar</button>
+                                            <button class="borrar"><i id="equis" class='text-4xl bx bx-x'></i></button>
+                                </div> -->
+                        </div> 
+                    </div>
+                        
+                        <form id="nueva-tarea-form" class="card-estilo">
+                            <textarea placeholder="Agregar tarea..." name="nueva-tarea-input" id="nueva-tarea-input" cols="30" rows="10"></textarea>
+                            <!-- <input 
+                                type="text" 
+                                name="nueva-tarea-input"
+                                id="nueva-tarea-input"
+                                placeholder="Agregar tarea"> -->
+                            <input 
+                                type="submit" 
+                                id="nueva-tarea-submit"
+                                value="Agregar tarea">  
+                        </form>
+                </div>
+                        </div>             
+                    
+                </div>
+
+                    <!-- //// SEPARACIÓN //// -->
+
+                <div class="3er-tab">            
+                    <div class="tareas-top">
+                        <div class="tareas-titulo_principal">
+                            <h2 contenteditable="true">Doing<span class="text-2xl pl-3 text-gray-400">2</span>
+                            </h2>
+                            <i class='leading-9 flex text-center text-4xl bx bx-dots-horizontal-rounded'></i>            
+                        </div>
+                    </div>    
+                        <div class="tareas-cards">
+                <div class="tarjeta">                    
+                    <div id="tareas">
+                        <div class="tarea">
+                                <div class="card-estilo" id="contenido">
+                                        <input 
+                                            type="text" 
+                                            class="text" 
+                                            value="Una tarea"
+                                            readonly>                                         
+                                </div>
+                                <div class="card-estilo" id="contenido">
+                                        <input 
+                                            type="text" 
+                                            class="text" 
+                                            value="Otra tarea"
+                                            readonly>                                         
+                                </div>
+                                <!-- <div class="actions">
+                                            <button class="edit">Editar</button>
+                                            <button class="borrar"><i id="equis" class='text-4xl bx bx-x'></i></button>
+                                </div> -->
+                        </div>  
+                    </div>
+                        
+                        <form id="nueva-tarea-form" class="card-estilo">
+                            <textarea placeholder="Agregar tarea..." name="nueva-tarea-input" id="nueva-tarea-input" cols="30" rows="10"></textarea>
+                            <!-- <input 
+                                type="text" 
+                                name="nueva-tarea-input"
+                                id="nueva-tarea-input"
+                                placeholder="Agregar tarea"> -->
+                            <input 
+                                type="submit" 
+                                id="nueva-tarea-submit"
+                                value="Agregar tarea">  
+                        </form>
+                </div>
+                        </div>             
+                    
+                </div>
+
+                    <!-- //// SEPARACIÓN //// -->
+
+                <div class="4to-tab">            
+                    <div class="tareas-top">
+                        <div class="tareas-titulo_principal">
+                            <h2 contenteditable="true">Done<span class="text-2xl pl-3 text-gray-400">0</span>
+                            </h2>
+                            <i class='leading-9 flex text-center text-4xl bx bx-dots-horizontal-rounded'></i>            
+                        </div>
+                    </div>    
+                        <div class="tareas-cards">
+                <div class="tarjeta">                    
+                    <div id="tareas">
+<!--                         <div class="tarea">
+                                <div class="card-estilo" id="contenido">
+                                        <input 
+                                            type="text" 
+                                            class="text" 
+                                            value="Una tarea"
+                                            readonly>                                         
+                                </div>                                       
+                                </div> -->
+                                <!-- <div class="actions">
+                                            <button class="edit">Editar</button>
+                                            <button class="borrar"><i id="equis" class='text-4xl bx bx-x'></i></button>
+                                </div> -->
+                        </div>  
+                    </div>
+                        
+                        <form id="nueva-tarea-form" class="card-estilo">
+                            <textarea placeholder="Agregar tarea..." name="nueva-tarea-input" id="nueva-tarea-input" cols="30" rows="10"></textarea>
+                            <!-- <input 
+                                type="text" 
+                                name="nueva-tarea-input"
+                                id="nueva-tarea-input"
+                                placeholder="Agregar tarea"> -->
+                            <input 
+                                type="submit" 
+                                id="nueva-tarea-submit"
+                                value="Agregar tarea">  
+                        </form>
+                </div>
+                </div>             
+                    
+            </div>
+
+        </div>    
+        
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>    
+<script src="../js/gestory.js"></script>
+
+</body>    

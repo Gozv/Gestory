@@ -24,7 +24,7 @@ const recuperar = (req,res) =>{
     })
 }
 
-export {
+module.exports = {
     landing,
     login,
     registro,

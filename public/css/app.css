@@ -1184,7 +1184,7 @@ nav {
 }
 
 .parteder {
-  background: hsla(203deg, 30%, 41%, 0.096);
+  background: hsla(203, 30%, 41%, 0.096);
   height: 100vh;
   width: 45%;
 }
@@ -1365,6 +1365,335 @@ nav {
   opacity: 0;
   visibility: hidden;
   transition: all 1s 400ms ease;
+}
+
+.gestor_de_tareas {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.gestor_de_tareas h1 {
+  padding: 1.2rem 1.5rem;
+  /*         border-bottom: 2px solid #6a778b63; */
+  display: block;
+}
+
+#body {
+  background-color: rgb(83, 82, 82);
+}
+
+.tableros {
+  flex: 1;
+  width: 100%;
+  overflow-x: auto;
+  padding: 1.2rem;
+}
+
+.tareas-cuerpo {
+  min-width: fit-content;
+  display: flex;
+  gap: 3rem;
+}
+
+.tareas-top {
+  gap: 2rem;
+}
+.tareas-top h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.tareas-titulo_principal {
+  display: flex;
+  flex: 1;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  justify-content: space-between;
+  background-color: #ebecf0;
+}
+.tareas-titulo_principal i {
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  margin-right: 1rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.primer-tab {
+  max-width: 290px;
+  overflow-y: auto;
+  min-height: fit-content;
+}
+
+.tareas-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  padding-top: 1rem;
+  border-bottom: 0.625rem;
+  border-top: 0.625rem;
+  background-color: #ebecf0;
+  max-width: 290px;
+  overflow-y: auto;
+}
+
+.tarjeta {
+  background-color: #ebecf0;
+}
+
+#agregar:hover {
+  border-radius: 3px;
+  background-color: rgba(87, 87, 97, 0.233);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-titulo {
+  font-weight: bold;
+}
+
+.card-estilo {
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  min-width: 20px;
+  max-width: 300px;
+  background-color: #ebecf0;
+}
+.card-estilo #nueva-tarea-input {
+  width: 100%;
+  max-height: 240px;
+  overflow-y: scroll;
+  height: 80px;
+  margin-top: 2px;
+}
+.card-estilo #nueva-tarea-submit {
+  background-color: rgb(51, 65, 85);
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.card-estilo #contenido {
+  display: flex;
+  /*     i:hover{
+          opacity: 1;
+          transition: 0.2s;
+          animation-timing-function: ease-in-out;
+      } */
+}
+.card-estilo #contenido .icon {
+  position: absolute;
+  font-size: 2.25rem;
+  left: 88%;
+  top: 26%;
+  color: #4c5a72;
+  cursor: pointer;
+  /*         opacity: 0; */
+}
+
+#nueva-tarea-input {
+  background-color: #fff;
+  flex: 1 1 0%;
+  word-wrap: break-word;
+}
+
+.tarea {
+  background-color: #ebecf0;
+}
+
+#tareas {
+  background-color: #ebecf0;
+}
+
+.actions {
+  background-color: #ebecf0;
+}
+
+.text {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 1rem;
+  width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  box-shadow: 2px 4px 3px -4px rgba(41, 41, 41, 0.75);
+  cursor: move;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.edit {
+  background-color: rgb(51, 65, 85);
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  align-content: flex-end;
+}
+.actions #equis i {
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 8px;
+}
+
+body {
+  background-color: rgb(43, 42, 42);
+}
+
+.nav_el {
+  background-color: #0367A6;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.4rem 0 0.4rem;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  margin: 0 1rem;
+  /*    padding-left: 0.4rem; */
+}
+.logo h1 {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+.logo img {
+  width: auto;
+  height: 3.3rem;
+}
+
+.paths {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.paths i {
+  background-color: #172b4d;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 55px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.busqueda {
+  position: relative;
+  margin: 0 1rem;
+  border-radius: 4px;
+  display: flex;
+}
+.busqueda input {
+  border-style: hidden hidden solid;
+  border-color: white;
+  border-bottom-width: 0.5px;
+  text-overflow: ellipsis;
+}
+.busqueda i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.user {
+  display: flex;
+  font-size: 2.6rem;
+  gap: 1.2rem;
+  margin: 0 1.6rem;
+}
+
+#icons {
+  color: #ffffff;
+}
+
+.menu_izq {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2.5rem 1rem 0;
+}
+.menu_izq h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #172b4d;
+  padding: 0.6rem 0.8rem 0.6rem 0;
+}
+.menu_izq h4:hover {
+  color: #0f69a1;
+  background-color: rgba(187, 197, 204, 0.2);
+  border-radius: 0.5rem;
+  animation: 0.2s;
+}
+.menu_izq h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #5e6c84;
+  padding: 0.6rem 0.8rem 0.6rem 0;
+}
+.menu_izq .tableros_activos {
+  display: flex;
+}
+.menu_izq .tableros_activos #icon-izq {
+  color: #5e6c84;
+  padding-left: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+.menu_izq .hr {
+  border-bottom: 1rem;
+  border-bottom: 2px solid #6a778b;
+  opacity: 0.5;
+  width: 90%;
+}
+
+body {
+  background-color: white;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*     margin: 1.5rem; */
+  width: 100%;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 1rem 0;
+}
+.principal h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #172b4d;
+}
+.principal #icon-p {
+  padding-right: 0.4rem;
+  color: #172b4d;
 }
 
 /*# sourceMappingURL=app.css.map */

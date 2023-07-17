@@ -1,0 +1,51 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.menu_izq{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2.5rem 1rem 0;
+    
+    h4{
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #172b4d;
+        padding: 0.6rem 0.8rem 0.6rem 0;
+    }
+
+    h4:hover{
+        color: #0f69a1;
+        background-color: #bbc5cc33;
+        border-radius: 0.5rem;
+        animation: 0.2s;
+    }
+
+    h5{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #5e6c84;
+        padding: 0.6rem 0.8rem 0.6rem 0;
+    }
+
+    .tableros_activos{
+        display: flex;
+
+        #icon-izq{   
+            color: #5e6c84;
+            padding-left: 2rem;            
+            font-weight: bold;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+
+    .hr{
+        border-bottom: 1rem;
+        border-bottom: 2px solid #6a778b;
+        opacity: 0.5;
+        width: 90%;
+    }
+}
+

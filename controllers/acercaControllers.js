@@ -5,4 +5,4 @@ const metodologias = (req,res) =>{
 }
 
 
-export default metodologias;
+module.exports = metodologias;

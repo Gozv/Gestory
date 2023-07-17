@@ -1,8 +1,8 @@
 //Importaciones
-import express from "express";
-import usuariosRoutes from "./routes/usuariosRoutes.js";
+const express = require("express");
+const usuariosRoutes = require("./routes/usuariosRoutes.js");
 
-import('./config/db.js');
+// const db = require('./config/db.js');
 
 
 
@@ -12,7 +12,7 @@ const app = express();
 
 
 //Estaticas.
-app.use(express.static('public'));
+app.use(express.static(__dirname+'/public'));
 
 //Habilitar Ejs
 app.set('view engine', 'ejs')
